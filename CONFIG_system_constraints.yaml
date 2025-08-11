@@ -1,0 +1,19 @@
+# System Constraints (English)
+meta_operational:
+  layer_weights:
+    computational: 0.3
+    monitoring: 0.4
+    ontological: 0.3
+    
+harmony_thresholds:
+  optimal: 0.85
+  critical: 0.80
+  emergency: 0.75
+
+deidentification:
+  activation_condition: "H < 0.80 or white_space_density > 0.4"
+  parameters:
+    reduction_factor: 0.6
+    scope: 
+      - identity_weights
+      - functional_weights
